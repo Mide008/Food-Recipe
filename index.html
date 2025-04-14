@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>What's Cooking - Find Your Perfect Recipe</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="full-page-body" id="full-page-body">
+
+        <!-- Hero Section -->
+
+        <div class="hero-section" id="hero-section">
+
+            <div class="hero-section-top" id="hero-section-top">
+
+                <div class="headline">
+
+                    <h1>What's Cooking?</h1>
+
+                    <h1>Find the Perfect Recipe in Seconds</h1>
+
+                </div>
+
+                <div class="sub-headline">
+
+                    <p>Enter ingredients and get instant recipe ideas tailored just for you.</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="hero-section-bottom" id="hero-section-bottom">
+
+                <div class="search-container" id="search-container">
+
+                    <span class="search-icon">🔍</span>
+
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Enter ingredients or cravings (e.g., eggs, pasta, spicy) & get recipes!">
+
+                    <button class="button" id="button">Surprise me!</button>
+
+                </div>
+
+                <!-- Popular ingredient tags -->
+
+                <div class="recipe-lists" id="recipe-lists">
+
+                    <div class="ingredient">Tomato</div>
+
+                    <div class="ingredient">Chicken</div>
+
+                    <div class="ingredient">Garlic</div>
+
+                    <div class="ingredient">Pasta</div>
+
+                    <div class="ingredient">Avocado</div>
+
+                    <div class="ingredient">Mushroom</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Recipe Cards Section -->
+
+        <div class="cards-section" id="cards-section">
+
+            <div class="features-recipe" id="features-recipe">
+
+                <h3>Featured Recipes</h3>
+
+            </div>
+
+            <div class="recipe-cards" id="recipe-cards">
+
+                <!-- Recipe cards will be populated by JavaScript -->
+
+                <div class="cards" id="cards">
+
+                    <div class="top-card">
+
+                        <img src="/api/placeholder/400/320" alt="Enchiladas Suizas">
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <div class="card-head">
+
+                            <h5>Enchiladas Suizas (Creamy Enchiladas Verdes)</h5>
+
+                            <p>15 mins | Easy | Serves 3</p>
+
+                            <p>Ingredients: Beef, Tomato, Garlic</p>
+
+                        </div>
+
+                        <div class="rating-down">
+
+                            <div class="left-side">
+
+                                ⭐ <span>4.9 </span>
+
+                            </div>
+
+                            <div class="right-side">
+
+                                <i class="fas fa-arrow-right"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- More recipe cards will be added here by JavaScript -->
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer Section -->
+
+        <div class="footer-section" id="footer-section">
+
+            <div class="sets-items">
+
+                <div class="sets">
+
+                    <div class="head-set">
+
+                        <h6>Explore</h6>
+
+                    </div>
+
+                    <div class="items-list">
+
+                        <p>Flavored</p>
+
+                        <p>Where to Buy</p>
+
+                        <p>All Products</p>
+
+                        <p>Spreads</p>
+
+                    </div>
+
+                </div>
+
+                <div class="sets">
+
+                    <div class="head-set">
+
+                        <h6>Cook</h6>
+
+                    </div>
+
+                    <div class="items-list">
+
+                        <p>All Recipes</p>
+
+                        <p>Popular Recipes</p>
+
+                        <p>Quick Easy</p>
+
+                        <p>Plants</p>
+
+                    </div>
+
+                </div>
+
+                <div class="sets">
+
+                    <div class="head-set">
+
+                        <h6>Company</h6>
+
+                    </div>
+
+                    <div class="items-list">
+
+                        <p>About Us</p>
+
+                        <p>Careers</p>
+
+                        <p>Contact Us</p>
+
+                        <p>Terms of Use</p>
+
+                    </div>
+
+                </div>
+
+                <div class="right-side-footer">
+
+                    <div class="head-set">
+
+                        <h6>Subscribe</h6>
+
+                    </div>
+
+                    <div class="input-sub">
+
+                        <div class="input-email-type">
+
+                            <input type="email" name="email" placeholder="Email Address">
+
+                        </div>
+
+                        <div class="send-button">
+
+                            <i class="fas fa-solid fa-arrow-right arrow-icon"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="copy-right">
+
+                <p>&copy; Olumide 2025. All rights reserved</p>
+
+                <div class="termss">
+
+                    <h6>Terms</h6>
+
+                    <h6>Privacy</h6>
+
+                    <h6>Cookies</h6>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Recipe Overlay -->
+
+        <div class="recipe-overlay" id="recipe-overlay">
+
+            <div class="overlay-content">
+
+                <button class="close-overlay" id="close-overlay" aria-label="Close recipe details">
+
+                    <i class="fas fa-times"></i>
+
+                </button>
+
+                <div class="recipe-detail-container">
+
+                    <div class="recipe-image">
+
+                        <img src="/api/placeholder/400/320" alt="Recipe image" id="overlay-recipe-image">
+
+                    </div>
+
+                    <div class="recipe-info">
+
+                        <div class="recipe-header">
+
+                            <div class="recipe-tags">
+
+                                <span class="recipe-category" id="overlay-category">🍽️ Main</span>
+
+                                <span class="recipe-region" id="overlay-region">🌍 International</span>
+
+                            </div>
+
+                            <h2 class="recipe-title" id="overlay-title">Mushroom and Veggie Stir-Fry</h2>
+
+                            <div class="recipe-rating" id="overlay-rating">⭐⭐⭐⭐⭐ 3.6</div>
+
+                            <button class="start-cooking-btn" id="start-cooking-btn">Start Cooking</button>
+
+                            <div class="recipe-actions">
+
+                                <div class="action-item">
+
+                                    <i class="fas fa-share-nodes"></i>
+
+                                    <span>Share</span>
+
+                                </div>
+
+                                <div class="action-item">
+
+                                    <i class="fas fa-bookmark"></i>
+
+                                    <span>Save</span>
+
+                                </div>
+
+                                <div class="action-item">
+
+                                    <i class="fas fa-print"></i>
+
+                                    <span>Print</span>
+
+                                </div>
+
+                                <div class="action-item">
+
+                                    <i class="fas fa-comment"></i>
+
+                                    <span>Comment</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="recipe-content">
+
+                            <div class="recipe-ingredients">
+
+                                <h3>Ingredients</h3>
+
+                                <ul id="overlay-ingredients">
+
+                                    <li>2 tbsp + 2 tsp neutral oil (canola, avocado, vegetable)</li>
+
+                                    <li>4 oz snow peas</li>
+
+                                    <li>6 oz ripe cherry tomatoes (1.5 cups)</li>
+
+                                    <li>1 large yellow onion (12 oz), chopped</li>
+
+                                    <li>3 garlic cloves, chopped</li>
+
+                                    <li>1 tsp grated fresh ginger</li>
+
+                                    <li>1 cup frozen peas</li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="recipe-directions">
+
+                                <h3>Directions</h3>
+
+                                <ol id="overlay-directions">
+
+                                    <li>Set a large plate next to the stove.</li>
+
+                                    <li>In a 12-inch skillet over medium-high heat, cook snow peas until blistered. Transfer.</li>
+
+                                    <li>Sear tomatoes in oil until blackened, about 2 minutes.</li>
+
+                                    <li>Cook onion, garlic, and spices, then blend cashews and boiling water to form a smooth paste.</li>
+
+                                    <li>Stir everything together and simmer for 2 more minutes.</li>
+
+                                </ol>
+
+                            </div>
+
+                            <div class="recipe-nutrition">
+
+                                <h3>Nutritional Facts (Per Serving)</h3>
+
+                                <ul id="overlay-nutrition">
+
+                                    <li>Calories: 360</li>
+
+                                    <li>Fat: 19g</li>
+
+                                    <li>Carbs: 18g</li>
+
+                                    <li>Protein: 12g</li>
+
+                                    <li>Sugar: 9g</li>
+
+                                </ul>
+
+                                <p class="nutrition-disclaimer">This analysis is an estimate based on available ingredients and this preparation. It should not substitute for a dietitian's or nutritionist's advice.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
+
+
